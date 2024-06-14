@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+* {margin: 0; padding: 0; list-style: none; text-decoration: none; color: #222;}
+
+
+.wrap {width: 1000px; height: 650px; border: 1px solid #000;}
+header {width: 200px; height: 650px; float: left; }
+header h1 {width: 200px; height: 71px;}
+header nav {width: 160px; margin: 20px;}
+header nav li {line-height: 50px; text-align: center; border-bottom: 1px solid #fff; background: #00ffcc;}
+header nav li a {display: block;}
+
+header nav li:hover {background: #13292f;}
+header nav > .gnb > li:hover > a {color: #00ffcc;}
+header nav .lnb li:hover {background: #13292f;}
+header nav .lnb li:hover a {color: #00ffcc;}
+
+header nav .lnb {overflow: hidden; height: 0px; transition: 0.3s;}
+header nav .lnb li {line-height: 40px; background: #fff;}
+
+
+header nav li:hover .lnb {height: 120px}
+
+
+.contents {width: 800px; height: 650px; float: right; }
+
+
+/* fade */
+.fade {width: 800px; height: 350px;}
+.fade li {position: absolute; display: none;}
+.fade li:nth-child(1) {display: block;}
+
+
+/* section */
+section {width: 800px; height: 200px;}
+section > div {width: 266px; height: 200px; float: left;}
+
+
+section .titlebox {height: 40px; margin-bottom: 10px;}
+section .titlebox h2 {width: 80px; text-align: center; height: 40px; line-height: 40px; font-size: 20px; float: left;}
+section .titlebox h2.on a {color: #c45f32;}
+section .contbox {height: 150px;}
+section .contbox .notice {}
+section .contbox p.title {float: left; height: 30px; line-height: 30px;}
+section .contbox p.date {float: right; height: 30px; line-height: 30px;}
+
+section .contbox .gallery {margin-top: 30px; display: none;}
+section .contbox .gallery li {width: 75px; height: 75px; float: left; margin-right: 5px;}
+section .contbox .gallery li img {width: 75px;}
+
+
+section .banner h2 {width: 80px; text-align: center; height: 40px; line-height: 40px; font-size: 20px; margin-bottom: 10px;}
+section .banner ul {padding: 0 10px;}
+section .banner li {height: 40px; border-bottom: 1px solid;}
+section .banner li p.icon {float: left; width: 40px;}
+section .banner li p.icon img {width: 30px;}
+section .banner li p.text {float: left; width: 200px; font-size: 14px; }
+
+
+section .baro h2 {width: 100px; text-align: center; height: 40px; line-height: 40px; font-size: 20px; margin-bottom: 20px;}
+section .baro .cont {}
+section .baro .cont li {width: 80px; height: 120px; float: left; background: #13292f; margin-right: 2px; font-size: 14px; text-align: center; word-break: keep-all;}
+section .baro .cont li img {width: 30px; margin: 18px auto;; display: block; }
+section .baro .cont li a {color: #fff;}
+
+
+/* footer */
+footer {width: 800px; height: 100px; background: #14282f;}
+
+footer h1 {width: 200px; height: 71px; float: left; margin-top: 10px;}
+footer .info {width: 500px; height: 100px; float: left;  margin-left: 100px;}
+
+footer .info .menu {width: 100%; height: 40px;  line-height: 40px; font-size: 14px}
+
+footer .info .menu a {color: #fff; padding: 0 10px;}
+footer .info .address {color: #fff;}
+
+.popup {width: 300px; height: 200px; background: #c45f32; position: absolute; top: 200px; left: 20%; padding: 20px; display: none;}
+.popup h2 {color: #fff;}
+.popup div {color: #fff; margin: 20px; }
+.popup a {position: absolute; width: 100px; height: 40px; background: #66321a; color: #fff; text-align: center; line-height: 40px; right: 20px; bottom: 20px;}
